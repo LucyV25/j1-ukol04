@@ -23,6 +23,8 @@ public class Sportka {
      */
     public void zamichat() {
       Collections.shuffle(osudi);
+        System.out.println("Vsechna cisla v osudi: " + osudi);
+
     }
 
     /**
@@ -32,7 +34,7 @@ public class Sportka {
      * @see List#subList(int, int)
      */
     public List<Integer> vylosovanaCisla() {
-      return osudi.subList(1, 7);
+      return osudi.subList(0, 6);
     }
 
     /**
@@ -41,6 +43,6 @@ public class Sportka {
      * @return Dodatkové číslo.
      */
     public Integer dodatkoveCislo() {
-      return osudi.indexOf(7);
+      return osudi.get(6);
     }
 }
